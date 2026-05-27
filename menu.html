@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+            <!-- Título para el navegador y los buscadores -->
+        <title>Almarang - Menu</title>
+
+        <!-- Descripción de la página para los buscadores -->
+        <meta name="description" content="Tarea de CSS selectores">
+
+        <!-- Palabras clave para los buscadores -->
+        <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+        <!-- Autor de la página -->
+        <meta name="author" content="AngeloStyles">
+
+        <!-- Favicon de la página -->
+        <link rel="icon" href="imagenes_proyecto/favicon_logo.png" type="image/png">
+
+        <!-- Codificación-->
+        <meta charset="UTF-8">
+
+        <!-- Para que la web sea responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Para algunos navegadores móviles -->
+        <meta name="theme-color" content="#3AFCC9">
+
+        <!-- Para utilizar el css-->
+        <link rel="stylesheet" href="css_proyecto/menu.css">
+        <link rel="stylesheet" href="css_proyecto/footer_web_proyecto.css">
+    </head>
+
+    <body>
+            
+        <header>
+            <nav class="barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img src="imagenes_proyecto/logo_almarang_png.png" alt="">
+
+            <section class="entrantes">
+                <h2>Entrantes</h2>
+                <div>
+                    <p>Crema de Calabaza</p>
+                </div>
+                <div>
+                    <p>Alubias Blancas con Chorizo y Costillas</p>
+                </div>
+                <div>
+                    <p>Ensalada Mixta con lechuga, atún, zanahoria,
+                        olivas y maíz
+                    </p>
+                </div>
+            </section>
+
+            <section class="fuerte">
+                <h2>Platos Principales</h2>
+                <div>
+                    <p>Bacalao en costra de Pistacho con miel mostaza y verduras</p>
+                </div>
+                <div>
+                    <p>Codillos al horno con Vegetales</p>
+                </div>
+                <div>
+                    <p>Chuletas de ternasco de Aragón con pure de patata y verduras</p>
+                </div>
+            </section>
+
+            <section class="postre">
+                <h2>Postres</h2>
+                <div>
+                    <p>Brownie</p>
+                </div>
+                <div>
+                    <p>Quesillo Venezolano</p>
+                </div>
+                <div>
+                    <p>Yogurt con frutas</p>
+                </div>
+                <div>
+                    <p>Alfajores</p>
+                </div>
+            </section>
+            <section class="precio">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Incluye bebida a eleccion: Agua, copa de vino o casera.</li>
+                                <li>El menu se sirve por persona, no se puede compartir.</li>
+                                <li>Si tiene alguna alergia comuniquelo al camarero.</li>
+                            </ul>
+                        </td>
+                        <td><img src="imagenes_proyecto/imagenes_menu/precio.png" alt="precio"></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+       <footer class="footer"> 
+            <img src="imagenes_proyecto/logo_negro_png.png" alt="logo footer">
+
+            <p>Tradición | Gastronomía | Sabor</p>
+            
+            <p>
+                <a href="mailto:sanchezangelo14088@gmail.com">Correo</a> |
+                <a href="https://maps.app.goo.gl/3ceHtadNyNUQv2og8">Ubicacion</a> |
+                <a href="https://instagram.com/angeloramirez_x">Instagram</a>
+            </p>
+
+            <p><a href="#">Reservas</a></p>
+
+            <small>© <span id="y"></span> Todos los derechos reservados</small>
+        </footer>
+
+        <script>
+            document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
+    </body>
+
+</html>

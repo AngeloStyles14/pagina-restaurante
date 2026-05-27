@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background: #eaeaea; /* color de fondo para escritorio */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* El contenedor principal */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;          /* límite para pantallas grandes */
+    margin: 0 auto;            /* centra el contenido */
+    min-height: 100dvh;         /* ocupa toda la pantalla */
+}
+
+/* Estilos del Header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra{
+    width: 100%;
+    display: block;
+}
+
+.barra ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.barra ul li {
+    flex: 1;
+}
+
+.barra ul a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0px;
+    background-color: #FF914D;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra ul li:nth-child(2) a{
+    background-color: bisque;
+    color: black;
+}
+
+/* Estilos del Main */
+main{
+    width: 90%;
+    margin: 10px auto 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #FF914D;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.366);
+
+    border-radius: 20px;
+    outline: 2px solid black; /* borde solo en el contorno */
+    outline-offset: -3px;     /* pega el borde a la caja */
+}
+
+
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img{
+    width: 120px;
+    filter: drop-shadow(2px 2px  white);
+}
+
+main section h2{
+    margin: 10px 0 10px 0;
+}
+
+main section div{
+    width: 90%;
+    text-align: center;
+}
+main section p{
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.515);
+    background-color: white;
+}
+
+
+/* Cuando la pantalla es muy grande, aplicamos borde y sombra */
+@media (min-width: 800px) {
+    body {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    main{
+        padding-bottom: 100px;
+    }
+}
+
+/* estilos de los div */
+section div p{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+section.entrantes div:nth-of-type(1) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/crema.png);
+    background-size: cover;
+}
+
+section.entrantes div:nth-of-type(2) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/alubias.png);
+    background-size: cover;
+}
+
+section.entrantes div:nth-of-type(3) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/ensalada.png);
+    background-size: cover;
+    padding: 7px;
+}
+
+section.fuerte div:nth-of-type(1) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/bacalao.png);
+    background-size: cover;
+    padding: 7px;
+}
+
+section.fuerte div:nth-of-type(2) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/codillo.png);
+    background-size: cover;
+}
+
+section.fuerte div:nth-of-type(3) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/ternasco.png);
+    background-size: cover;
+    padding: 7px;
+}
+
+section.postre div:nth-of-type(1) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/brownie.png);
+    background-size: cover;
+}
+
+section.postre div:nth-of-type(2) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/quesillo.png);
+    background-size: cover;
+}
+
+section.postre div:nth-of-type(3) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/yogurt.png);
+    background-size: cover;
+}
+
+section.postre div:nth-of-type(4) p{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../imagenes_proyecto/imagenes_menu/alfajor.png);
+    background-size: cover;
+}
+
+.precio table{
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.precio table ul{
+    color: white;
+}
+
+.precio table td{
+    padding: 0;
+    font-size: 13px;
+}
+
+.precio table td ul li{
+    padding-bottom: 6px;
+}
+
+section.precio img{
+    width: 120px;
+
+}
