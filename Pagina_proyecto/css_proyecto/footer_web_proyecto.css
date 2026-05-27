@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #222;
+    color: #fff;
+    padding: clamp(1rem, 2vw, 2rem); /* padding fluido */
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: clamp(0.3rem, 1vw, 0.7rem) 0;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem); /* texto fluido */
+}
+
+.footer a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer small {
+    display: block;
+    margin-top: clamp(0.5rem, 1vw, 1rem);
+    opacity: 0.7;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+}
+
+.footer img{
+    width: 150px;
+    filter: drop-shadow(1px 2px  white);
+}

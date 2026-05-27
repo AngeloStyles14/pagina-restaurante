@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background: #eaeaea; /* color de fondo para escritorio */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* El contenedor principal */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;          /* límite para pantallas grandes */
+    margin: 0 auto;            /* centra el contenido */
+    min-height: 100dvh;         /* ocupa toda la pantalla */
+}
+
+body main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagenes_proyecto/fondo_index.png);       /* fondo del “móvil” */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0px 0px 100px 0;
+}
+/* Cuando la pantalla es muy grande, aplicamos borde y sombra */
+@media (min-width: 800px) {
+    body {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    main{
+        padding-bottom: 100px;
+    }
+}
+
+.header{
+    display: grid;
+    font-size: 15px;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.header h2:first-of-type{
+    border-bottom: 2px solid black;
+}
+
+.header h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header img{
+    width: 150px;
+}
+
+main div{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main div:nth-child(2){
+    margin: 70px 0;
+}
+
+main div a{
+    display: block;
+    border: 2px solid #d6d4d4a6;
+    width: 200px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main div a:active{
+    color: white;
+    background-color: #FF914D;
+}

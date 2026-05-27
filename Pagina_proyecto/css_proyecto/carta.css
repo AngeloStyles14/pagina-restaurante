@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background: #eaeaea; /* color de fondo para escritorio */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* El contenedor principal */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;          /* límite para pantallas grandes */
+    margin: 0 auto;            /* centra el contenido */
+    min-height: 100dvh;         /* ocupa toda la pantalla */
+}
+
+/* Estilos del Header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img{
+    width: 120px;
+}
+
+.barra{
+    width: 100%;
+    display: block;
+}
+
+.barra ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.barra ul li {
+    flex: 1;
+}
+
+.barra ul a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0px;
+    background-color: #FF914D;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra ul li:nth-child(2) a{
+    background-color: bisque;
+    color: black;
+}
+
+/* Estilos del Main */
+
+body main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px 0;
+    text-align: center;
+}
+
+main h3{
+    font-size: 15px;
+    color: #FF914D;
+    padding: 0px 0px;
+    margin: 0;
+}
+
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: stretch;
+    text-align: center;
+}
+
+details{
+    width: 90%;
+    margin: 0px auto 20px auto;
+    padding: 0;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
+
+details > summary {
+    background-color: #FF914D;
+    padding: 15px;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    display: block;
+}
+
+details {
+    overflow: hidden;
+    transition: max-height 2s ease;
+    max-height: 60px; /* altura del summary cerrado */
+}
+
+/* Cuando está abierto */
+details[open] {
+    max-height: 2000px; /* suficiente para que quepa el contenido */
+}
+
+/* Cuando la pantalla es muy grande, aplicamos borde y sombra */
+@media (min-width: 800px) {
+    body {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        
+        main{
+        padding-bottom: 50px;
+        }
+
+        main img.alergenos{
+            width: 500px;
+        }
+
+    }
+}
+
+/* Estilo general para table */
+section table{
+    border-spacing: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+section table tr{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.363);
+}
+section table th, section table td {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+section table td {
+    text-align: center;
+}
+
+section table td p{
+    color: white;
+    background-color: #FF914D;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+section span{
+    display: block;
+}
+
+.especial{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* estilo de imagenes */
+section.entrantes img,
+section.desayunos img,
+section.postres img{
+    width: 300px;
+}
+
+section.bocadillos img,
+section.combinados img{
+    width: 200px;
+}
+
+section.desayunos img.yogurt, 
+section.desayunos img.churros,
+section.hamburguesas img,
+section.ensaladas img{
+    width: 180px;
+}
+
+th.info{
+    text-align: center;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+section p.nota{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(163, 162, 162);
+}
+
+main img.alergenos{
+    width: 320px;
+    margin: auto;
+}
